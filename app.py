@@ -22,12 +22,6 @@ def randomnumner():
     fake_address = fake.address()
     return render_template('randomnumber.html', single_number = number_var, single_address = fake_address)
 
-df = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/HHA_504_2023/main/WK1/data/113243405_StonyBrookSouthamptonHospital_StandardCharges.csv')
-@app.route('/data')
-def data(data=df):
-    data = data.sample(15)
-    return render_template('data.html', data=data)
-
 if __name__ == '__main__':
     app.run(
         debug=True,
