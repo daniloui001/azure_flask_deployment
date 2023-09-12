@@ -1,25 +1,37 @@
-{% extends "base.html" %} 
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Healthcare App</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
 
-    <section class="mb-6">
-        <h2 class="text-xl mb-2">About</h2>
-        <p>This is a healthcare application designed to manage patient data efficiently and securely.</p>
-    </section>
+<body class="bg-gray-200">
 
-    <section>
-        <h2 class="text-xl mb-2">Features</h2>
-        <ul class="list-disc pl-5">
-            <li>Secure patient data management</li>
-            <li>Easy appointment scheduling</li>
-            <li>Interactive dashboards for health metrics</li>
-        </ul>
-    </section>
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-2xl">Welcome to My Healthcare App</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/about" class="hover:underline">About</a></li>
+                <li><a href="/data" class="hover:underline">Data</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main class="p-4">
 
+        {% block content %}{% endblock %}
 
-{% endblock %}
+    </main>
 
-   
-   
-   
+    <footer class="bg-blue-600 text-white p-4 mt-6">
+        <p>© 2023 My Healthcare App. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
