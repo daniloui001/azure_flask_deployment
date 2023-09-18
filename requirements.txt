@@ -1,5 +1,6 @@
 faker
 pandas
 flask
-random
+gunicorn
 numpy
+python-dotenv
