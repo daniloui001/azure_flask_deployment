@@ -1,5 +1,8 @@
 from flask import Flask, render_template
 import pandas as pd
+import faker as faker
+import numpy as np
+
 
 app = Flask(__name__)
 
