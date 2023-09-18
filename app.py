@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import pandas as pd
-import faker as faker
+import faker as Faker
 import numpy as np
 
 
